@@ -15,7 +15,7 @@ public class Calculadora {
 	 * @param operador
 	 * @return
 	 */
-	public int operacao(int num1, int num2, String operador) {
+	public double operacao(double num1, double num2, String operador) {
 		switch (operador) {
 		case "+":
 			return num1 + num2;
@@ -32,7 +32,6 @@ public class Calculadora {
 
 	/**
 	 * Imprime o resultado
-	 * 
 	 * @param args
 	 */
 	public static void main(String args[]) {
@@ -42,12 +41,12 @@ public class Calculadora {
 		Scanner entrada = new Scanner(System.in);
 
 		System.out.println("Informe o primeiro valor: ");
-		int valor1 = entrada.nextInt();
+		double valor1 = entrada.nextDouble();
 		System.out.println("Informe o operador ( +, -, / ou *): ");
 		String operador = entrada.next();
 		System.out.println("Informe o segundo valor: ");
-		int valor2 = entrada.nextInt();
-		int resultado = c.operacao(valor1, valor2, operador);
+		double valor2 = entrada.nextDouble();
+		double resultado = c.operacao(valor1, valor2, operador);
 
 		System.out.println(resultado);
 	}
