@@ -6,15 +6,14 @@ public class VariaveisInstancia {
 
 	public static int method() {
 		int ponteiro = 0;
-		int j = 0;
 		for (int i = count; i >= 100; --i) {
-			ponteiro = j++;
+			ponteiro = i;
 		}
 		return ponteiro;
 	}
 
 	public static void main(String[] args) {
-		// Não é possível usar o ponteiro this em um método stático
+		// Não é possível usar o ponteiro this em um método estático
 		// int number = this.id;
 		System.out.println("A direrença é de: " + method());
 	}
