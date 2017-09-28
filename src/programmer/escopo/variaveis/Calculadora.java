@@ -1,7 +1,16 @@
 package programmer.escopo.variaveis;
 
+/**
+ * Simples calculadora JAVA
+ * @author adriano.costa
+ *
+ */
 public class Calculadora {
 
+	/*
+	 * Contém os valores e tipo de operação
+	 * recebidos por parâmetros
+	 */
 	public int operacao(int num1, int num2, String operador) {
 		switch (operador) {
 		case "+":
@@ -20,7 +29,8 @@ public class Calculadora {
 	public static void main(String args[]) {
 
 		Calculadora c = new Calculadora();
-		int resultado = c.operacao(5, 2, "*");
+		int resultado = c.operacao(10, 5, "*");
+
 		System.out.println(resultado);
 	}
 }
