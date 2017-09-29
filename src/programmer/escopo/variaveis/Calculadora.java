@@ -49,5 +49,7 @@ public class Calculadora {
 		double resultado = c.operacao(valor1, valor2, operador);
 
 		System.out.println(resultado);
+		
+		entrada.close();
 	}
 }
