@@ -12,9 +12,9 @@ public class ControleIf {
 		int x = scan.nextInt();
 
 		if (x % 2 == 0) {
-			System.out.println("O número " + x + " é par");
+			System.out.println("O número " + x + " é PAR");
 		}else{
-			System.out.println("O número " + x + " é impar");
+			System.out.println("O número " + x + " é IMPAR");
 		}
 
 		scan.close();
