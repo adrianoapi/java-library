@@ -23,6 +23,11 @@ public class Arrays {
 		for (int i = 0; i < temperaturas.length; i++) {
 			System.out.println("O valor da temperatura " + (i + 1) + " é: " + temperaturas[i]);
 		}
+		
+		// Tem acesso apenas ao valor
+		for(double temp: temperaturas){
+			System.out.println(temp);
+		}
 
 	}
 
