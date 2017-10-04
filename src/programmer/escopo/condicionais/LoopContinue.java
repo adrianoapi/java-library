@@ -15,6 +15,7 @@ public class LoopContinue {
 
 		for (int i = x; i <= limit; i++) {
 
+			// Não vai imprimir quando for divisivel por 7
 			if (i % 7 == 0) {
 				continue;
 			}
