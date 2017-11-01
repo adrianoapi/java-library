@@ -36,9 +36,22 @@ public class JogoDaVelha {
 				if (linha >= 1 && linha <= 3) {
 					linhaValida = true;
 				}else{
-					System.out.println("Entrada inválida");
+					System.out.println("Entrada inválida, tente novamente!");
 				}
 			}
+			
+			boolean colunaValida = false;
+			while(!colunaValida){
+				System.out.println("Entre com a coluna (1, 2 ou 3):");
+				coluna = scan.nextInt();
+				if(coluna >= 1 && coluna <= 3){
+					colunaValida = true;
+				}else{
+					System.out.println("Entrada inválida, tente novamente!");
+				}
+			}
+			
+			ganhou = true;
 
 		}
 
